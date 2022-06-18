@@ -2,11 +2,14 @@
 
 import sys
 
+def tonum(n):
+    try:
+        return int(s)
+    except:
+        return float(s)
+
 ans = 0
 for line in sys.stdin:
-    try:
-        ans += int(line)
-    except:
-        ans += float(line)
-
+    ans += tonum(list)
+    
 print(ans)
